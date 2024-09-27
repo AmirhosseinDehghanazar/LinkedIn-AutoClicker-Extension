@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>LinkedIn Auto Clicker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LinkedIn Auto Clicker</h1>
+
+      <!-- Input for Delay -->
+      <div class="input-group">
+        <label for="delay">Delay (seconds):</label>
+        <input type="number" id="delay" value="2" min="1" max="50" />
+      </div>
+
+      <!-- Input for Max Clicks -->
+      <div class="input-group">
+        <label for="maxClicks">Max Clicks:</label>
+        <input type="number" id="maxClicks" value="10" min="1" max="50" />
+      </div>
+
+      <!-- Start and Stop Buttons -->
+      <div class="button-group">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn" style="display: none">Stop</button>
+      </div>
+
+      <!-- Status Message -->
+      <p id="statusMessage"></p>
+
+      <!-- Open List Button -->
+
+      <!-- Connection List -->
+      <ul id="connectionList" class="connection-list"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

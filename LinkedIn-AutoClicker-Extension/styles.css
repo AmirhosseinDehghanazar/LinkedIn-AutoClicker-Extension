@@ -1,0 +1,136 @@
+/* Neon theme with a dark, mysterious design */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  background: radial-gradient(circle, #000 50%, #111 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Main container for the extension UI */
+.container {
+  width: 380px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  background-color: rgba(
+    10,
+    10,
+    10,
+    0.8
+  ); /* Darker, more dramatic background */
+  border: 2px solid #ff00ff; /* Neon pink border */
+  border-radius: 15px; /* Softer rounded edges */
+  box-shadow: 0 0 40px #ff00ff, 0 0 80px #00ffff, 0 0 120px #00ffcc; /* Strong neon shadow effect */
+  animation: neonGlow 5s ease-in-out infinite; /* Dynamic neon border glow */
+}
+
+/* Heading with a neon glow and bold presence */
+h1 {
+  font-size: 26px;
+  color: #ff00ff; /* Neon pink text */
+  text-shadow: 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff; /* Brighter, more vivid neon glow */
+  letter-spacing: 2px;
+}
+
+/* Input label styling */
+label {
+  display: block;
+  margin: 20px 0 5px;
+  font-size: 16px;
+  color: #ccc; /* Lighter text for better readability */
+}
+
+/* Input fields with dark theme and neon borders */
+input {
+  width: 320px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #00ffff; /* Neon cyan border */
+  background-color: #1a1a1a; /* Even darker background for input */
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 0 10px #00ffff; /* Subtle glow */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Input fields on focus */
+input:focus {
+  box-shadow: 0 0 20px #00ffcc; /* Cyan glow on focus */
+  border-color: #00ffcc;
+}
+
+/* Start/Stop button styling */
+button {
+  width: 350px;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #ff00ff; /* Neon pink */
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  text-shadow: 0 0 15px #ff00ff; /* Strong neon text glow */
+  transition: background-color 0.3s ease, transform 0.3s ease, text-shadow 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #00ffff; /* Cyan on hover */
+  text-shadow: 0 0 20px #00ffff; /* Cyan glow on hover */
+  transform: scale(1.05);
+}
+
+/* Button styling when active or focused */
+button:focus,
+button:active {
+  background-color: #00ffcc; /* Cyan on focus/active */
+  transform: scale(1.1);
+  text-shadow: 0 0 30px #ff00ff; /* Pink glow on focus/active */
+}
+
+/* Dynamic glow effect for the entire container */
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 40px #ff00ff, 0 0 80px #00ffff, 0 0 120px #00ffcc;
+  }
+  50% {
+    box-shadow: 0 0 60px #00ffcc, 0 0 80px #ff00ff, 0 0 100px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 40px #ff00ff, 0 0 80px #00ffff, 0 0 120px #00ffcc;
+  }
+}
+
+/* List styling for added items */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #222;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #ff00ff; /* Neon pink border */
+  box-shadow: 0 0 15px #ff00ff; /* Glow around list items */
+  font-size: 14px;
+}
+
+/* Styling for the logo image */
+.logo img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 0 20px #ff00ff); /* Neon pink glow for the logo */
+}
