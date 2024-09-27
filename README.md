@@ -1,0 +1,2 @@
+# LinkedIn-AutoClicker
+LinkedIn AutoClicker
